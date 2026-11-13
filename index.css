@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --concreto: #E2DFD8;
     --concreto-escuro: #CBC7BE;
     --tinta: #0F1E3D;
@@ -16,7 +16,7 @@
     --fonte-texto: "Archivo", Arial, sans-serif;
 }
 
-body{
+body {
     background: var(--concreto);
     color: var(--tinta);
     font-family: var(--fonte-texto);
@@ -24,77 +24,81 @@ body{
     line-height: 1.55;
 }
 
-a{
+a {
     color: inherit;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: var(--fonte-cartaz);
     font-weight: 900;
     line-height: 0.95;
 }
 
-.conteudo{
+.conteudo {
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 32px;
 }
 
-.topo{
+.topo {
     padding-block: 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo{
+.logo {
     font-family: var(--fonte-cartaz);
     font-size: 34px;
     font-weight: 900;
     text-decoration: none;
 }
 
-.menu{
+.menu {
     display: flex;
     gap: 36px;
 }
 
-.menu a{
+.menu a {
     font-weight: 600;
     text-decoration: none;
     padding-bottom: 4px;
     border-bottom: 4px solid transparent;
 }
 
-.menu a:hover{
+.menu a:hover {
     border-bottom-color: var(--tinta);
 }
-.menu a.atual{
+
+.menu a.atual {
     border-bottom-color: var(--fita);
 }
 
-.cartazes{
+.cartazes {
     margin-top: 16px;
     display: flex;
     gap: 16px;
 }
 
-.cartaz{
+.cartaz {
     padding: 40px;
 }
 
-.cartaz-principal{
+.cartaz-principal {
     background: var(--caixa-dagua);
     color: var(--branco);
     flex: 2;
 
-    h1{
+
+    h1 {
         font-size: 132px;
         max-width: 9ch;
     }
 }
 
-.cartaz-lateral{
+.cartaz-lateral {
     background: var(--fita);
     flex: 1;
     display: flex;
@@ -103,80 +107,80 @@ h1, h2, h3{
     gap: 32px;
     align-items: flex-start;
 
-    p{
+    p {
         font-size: 22px;
         font-weight: 600;
         line-height: 1.3;
     }
 }
 
-.botao{
-    background: var(--tinta);
-    color: var(--branco);
-    font-weight: 700;
+.botao {
+    display: inline-block;
+    background-color: #071735;
+    color: #FFFFFF;
     text-decoration: none;
-    padding: 16px 28px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 600;
     border: none;
-    font-family: var(--fonte-texto);
-    font-size: 17px;
     cursor: pointer;
 }
 
-.botao:hover{
+.botao:hover {
     background: var(--caixa-dagua);
 }
 
-.secao{
+.secao {
     margin-top: 96px;
 }
 
-.titulo-secao{
+.titulo-secao {
     font-size: 64px;
     margin-bottom: 32px;
 }
 
-.cards{
+.cards {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
 
-.card{
+.card {
     background: var(--branco);
     border: 3px solid var(--tinta);
     flex: 1 1 340px;
 }
 
-.card .foto{
+.card .foto {
     height: 170px;
 }
 
-.foto{
+.foto {
     background: var(--concreto-escuro);
 }
 
-.foto-azul{
+.foto-azul {
     background: var(--caixa-dagua);
 }
 
-.foto-amarela{
-    background: var(--fita)
+.foto-amarela {
+    background: var(--fita);
 }
 
-.foto-tinta{
+.foto-tinta {
     background: var(--tinta);
 }
 
-.card-texto{
+.card-texto {
     padding: 24px;
 }
 
-.card h3{
+.card h3 {
     font-size: 36px;
     margin-bottom: 12px;
 }
 
-.card-info{
+.card-info {
     margin-top: 20px;
     padding-top: 16px;
     border-top: 2px solid var(--concreto-escuro);
@@ -185,5 +189,52 @@ h1, h2, h3{
 
     display: flex;
     justify-content: space-between;
+}
+
+.passos {
+    display: flex;
+    gap: 24px;
+}
+
+.passo {
+    border-top: 6px solid var(--tinta);
+    padding-top: 20px;
+    flex: 1;
+}
+
+.passo-numero {
+    font-family: var(--fonte-cartaz);
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 1;
+    color: var(--caixa-dagua);
+}
+
+.passo h3 {
+    font-size: 32px;
+    margin-block: 8px 12px;
+}
+
+.rodape {
+    margin-top: 120px;
+    background: var(--tinta);
+    color: var(--concreto);
+    padding-block: 56px;
+}
+
+.rodape-colunas {
+    display: flex;
+    gap: 40px;
+}
+
+.rodape-coluna {
+    flex: 1;
+}
+
+.rodape h4 {
+    font-family: var(--fonte-cartaz);
+    font-size: 28px;
+    color: var(--fita);
+    margin-bottom: 12px;
 }
     
